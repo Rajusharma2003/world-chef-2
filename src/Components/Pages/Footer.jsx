@@ -7,6 +7,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import disImg2 from "../../Images/wbproduct2.png";
+import emailImg from '../../../images/envelope-outline.svg'
 
 const Footer = () => {
   return (
@@ -24,7 +25,7 @@ const Footer = () => {
                 <h3 className="d-flex align-items-center">
                   <span className="me-1">
                     <img
-                      src="images/envelope-outline.svg"
+                      src={emailImg}
                       alt="Image"
                       className="img-fluid"
                     />

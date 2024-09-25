@@ -10,6 +10,12 @@ import aboutImage from "../../Images/infoImg.jpg";
 import aboutImage1 from "../../Images/wabout1.jpg";
 import aboutImage2 from "../../Images/wabout2.png";
 import aboutImage3 from "../../Images/wabout3.jpg";
+import trucksvg from '../../../images/truck.svg';
+import bagsvg from '../../../images/bag.svg';
+import supportsvg from '../../../images/support.svg';
+import returnsvg from '../../../images/return.svg';
+
+// import components here.
 import Carousel from "./Carousel/Carousel";
 import Footer from "./Footer";
 
@@ -32,10 +38,10 @@ const HomePage = () => {
                   and aesthetics.
                 </p>
                 <p>
-                  <a href="" className="btn btn-secondary me-2">
+                  <a  className="btn btn-secondary me-2">
                     Shop Now
                   </a>
-                  <a href="#" className="btn btn-white-outline">
+                  <a  className="btn btn-white-outline">
                     Explore
                   </a>
                 </p>
@@ -67,54 +73,40 @@ const HomePage = () => {
                 consideration has been given to every aspect of the products
                 design process. It implies that the materials used, the
                 engineering, and the overall aesthetics have been thoughtfully
-                chosen and implemented to ensure high quality and functionality.{" "}
+                chosen and implemented to ensure high quality and functionality.
               </p>
-              <p>
-                <a href="shop.html" className="btn">
+              <p className="btn">
                   Explore
-                </a>
               </p>
             </div>
             {/* End Column 1 */}
 
             {/* Start Column 2 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="#">
+              <a className="product-item" >
                 <img src={disImg1} className="img-fluid product-thumbnail" />
                 <h3 className="product-title">infrared cooktop</h3>
-                <strong className="product-price">50.00</strong>
-
-                <span className="icon-cross">
-                  <img src={"images/cross.svg"} className="img-fluid" />
-                </span>
+                <strong className="product-price">RS 50.00</strong> 
               </a>
             </div>
             {/* End Column 2 */}
 
             {/* Start Column 3 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="#">
+              <a className="product-item" >
                 <img src={disImg2} className="img-fluid product-thumbnail" />
                 <h3 className="product-title">infrared cooktop</h3>
-                <strong className="product-price">78.00</strong>
-
-                <span className="icon-cross">
-                  <img src="images/cross.svg" className="img-fluid" />
-                </span>
+                <strong className="product-price">RS 78.00</strong>
               </a>
             </div>
             {/* End Column 3 */}
 
             {/* Start Column 4 */}
             <div className="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-              <a className="product-item" href="#">
+              <a className="product-item" >
                 <img src={disImg3} className="img-fluid product-thumbnail" />
                 <h3 className="product-title">infrared cooktop</h3>
-                <strong className="product-price">43.00</strong>
-
-                <span className="icon-cross">
-                  <img src="images/cross.svg" className="img-fluid" />
-                </span>
+                <strong className="product-price">RS 43.00</strong> 
               </a>
             </div>
             {/* End Column 4 */}
@@ -140,9 +132,9 @@ const HomePage = () => {
                   <div className="feature">
                     <div className="icon">
                       <img
-                        src="images/truck.svg"
+                        src={trucksvg}
                         alt="Image"
-                        className="imf-fluid"
+                        className="trucksvg"
                       />
                     </div>
                     <h3>Fast &amp; Free Shipping</h3>
@@ -157,9 +149,9 @@ const HomePage = () => {
                   <div className="feature">
                     <div className="icon">
                       <img
-                        src="images/bag.svg"
+                        src={bagsvg}
                         alt="Image"
-                        className="imf-fluid"
+                        className="bagsvg"
                       />
                     </div>
                     <h3>Easy to Shop</h3>
@@ -174,9 +166,9 @@ const HomePage = () => {
                   <div className="feature">
                     <div className="icon">
                       <img
-                        src="images/support.svg"
+                        src={supportsvg}
                         alt="Image"
-                        className="imf-fluid"
+                        className="supportsvg"
                       />
                     </div>
                     <h3>24/7 Support</h3>
@@ -192,7 +184,7 @@ const HomePage = () => {
                   <div className="feature">
                     <div className="icon">
                       <img
-                        src="images/return.svg"
+                        src={returnsvg}
                         alt="Image"
                         className="imf-fluid"
                       />
@@ -225,13 +217,13 @@ const HomePage = () => {
             <div className="col-lg-7 mb-5 mb-lg-0">
               <div className="imgs-grid">
                 <div className="grid grid-1">
-                  <img src={aboutImage1} alt="Untree.co" />
+                  <img src={aboutImage1} alt="aboutimg" />
                 </div>
                 <div className="grid grid-2">
-                  <img src={aboutImage2} alt="Untree.co" />
+                  <img src={aboutImage2} alt="aboutimg" />
                 </div>
                 <div className="grid grid-3">
-                  <img src={aboutImage3} alt="Untree.co" />
+                  <img src={aboutImage3} alt="aboutimg" />
                 </div>
               </div>
             </div>
@@ -247,6 +239,11 @@ const HomePage = () => {
                 products that align with current design trends and cater to
                 individual preferences, ensuring a seamless and satisfying
                 experience in achieving a modern kitchen design.
+
+                we assist customers in achieving contemporary and stylish 
+                kitchen layouts. It imlies that our expertise and product contrubute to 
+                creating modern aesthetics functionality and efficiency in kitchen spaces 
+                we offer guidance 
               </p>
 
               <ul className="list-unstyled custom-list my-4">
@@ -270,7 +267,7 @@ const HomePage = () => {
                 </li>
               </ul>
               <p>
-                <a href="#" className="btn">
+                <a  className="btn">
                   Explore
                 </a>
               </p>
@@ -292,14 +289,14 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {/* Column 1 */}
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg1}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -308,14 +305,14 @@ const HomePage = () => {
             </div>
             {/* Column 2 */}
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg2}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -324,14 +321,14 @@ const HomePage = () => {
             </div>
             {/* Column 3 */}
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg3}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -340,14 +337,14 @@ const HomePage = () => {
             </div>
             {/* Column 4 */}
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg1}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -356,14 +353,14 @@ const HomePage = () => {
             </div>
             {/* Additional Columns */}
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg2}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -371,14 +368,14 @@ const HomePage = () => {
               </a>
             </div>
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg3}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -386,14 +383,14 @@ const HomePage = () => {
               </a>
             </div>
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg1}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
@@ -401,14 +398,14 @@ const HomePage = () => {
               </a>
             </div>
             <div className="mb-5">
-              <a className="product-item block" href="/product-overview">
+              <a className="product-item block">
                 <img
                   src={disImg2}
                   className="img-fluid product-thumbnail w-full"
                   alt="Product"
                 />
                 <h3 className="product-title mt-2 text-lg font-medium">
-                  Product Name
+                Infrared cooktop
                 </h3>
                 <span className="icon-cross block mt-2 text-blue-500 cursor-pointer">
                   Enquiry Now
